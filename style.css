@@ -5,9 +5,11 @@ body {
 h1 {
   font-family: "Courier New", Courier, monospace;
 }
+
 h2 {
   color: red;
   font-size: 20px;
+  background-color: blue;
 }
 
 .practise {
@@ -15,5 +17,23 @@ h2 {
   font-size: 15px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+
+.larger-image {
+  width: 500px;
+}
 /* there are so many properties that you can use to style the text  */
 /* youre able to put another font family as a default */
+/* these are some of the properties you use to style the image */
+.thick-red-border {
+  border-color: red;
+  border-width: 10px;
+  border-style: solid;
+  border-radius: 30%;
+}
+/* a percentage can also used on border radius */
+.silver-background {
+  background-color: silver(25, 14, 243);
+  color: rgb(14, 14, 226);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: medium;
+}

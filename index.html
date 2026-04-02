@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1 style="color: blue">INLINE STYLES</h1>
+    <h1 style="color: rgb(35, 35, 245); background-color: red">
+      INLINE STYLES
+    </h1>
     <p>use directly to the element that you want to style</p>
     <p>my name is mazingi</p>
     <p class="practise">
@@ -22,6 +24,53 @@
     <h2>USING CLASSES IN CSS</h2>
     <!-- you use a dot . before you write your class -->
     <p class="practise">Cascading style sheet is used to style a web page</p>
-    <img src="asserts\images\audi.jpg" alt="a beautiful image of an audi" />
+    <h3>HOW TO STYLE AN IMAGE</h3>
+    <img
+      class="larger-image thick-red-border"
+      src="asserts\images\audi.jpg"
+      alt="a beautiful image of an audi"
+    />
+    <!-- properties like boarder color width and border style can be used -->
+    <div class="silver-background">
+      <p>My favourite fruits</p>
+      <ul>
+        <li>apples</li>
+        <li>bananas</li>
+        <li>oranges</li>
+        <li>mangoes</li>
+      </ul>
+    </div>
+    <div>
+      <form>
+        <h3>SIGN UP FORM</h3>
+        <fieldset>
+          <legend>Personal info</legend>
+          <div>
+            <label for="USERNAME">USERNAME</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div>
+            <label for="EMAIL">EMAIL</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div>
+            <label for="PASSWORD">PASSWORD</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <div>
+            <p>Would you like to receive our updates on your email</p>
+            <div>
+              <label for="updates-yes">YES</label>
+              <input type="radio" id="updates-yes" name="updates" value="yes" />
+            </div>
+            <div>
+              <label for="updates-no">NO</label>
+              <input type="radio" id="updates-no" name="updates" value="no" />
+            </div>
+          </div>
+          <button>SUBMIT</button>
+        </fieldset>
+      </form>
+    </div>
   </body>
 </html>
