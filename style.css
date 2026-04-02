@@ -37,3 +37,10 @@ h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: medium;
 }
+/* css give a higher priority that classes */
+#sign-up-form {
+  color: rgba(14, 13, 13, 0.905);
+  background-color: rgb(39, 200, 241);
+}
+/* there are 3 properties that are used to control the space around each element [padding'margin 'border*/
+/* padding is the space around the text */
