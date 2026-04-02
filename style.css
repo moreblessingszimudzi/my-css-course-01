@@ -1,0 +1,19 @@
+body {
+  background-color: rgb(197, 237, 18);
+}
+
+h1 {
+  font-family: "Courier New", Courier, monospace;
+}
+h2 {
+  color: red;
+  font-size: 20px;
+}
+
+.practise {
+  color: rgb(37, 9, 225);
+  font-size: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+/* there are so many properties that you can use to style the text  */
+/* youre able to put another font family as a default */
