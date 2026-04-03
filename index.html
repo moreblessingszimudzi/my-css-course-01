@@ -5,100 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
   </head>
   <body>
-    <h1 style="color: rgb(35, 35, 245); background-color: red">
-      INLINE STYLES
-    </h1>
-    <p>use directly to the element that you want to style</p>
-    <p>my name is mazingi</p>
-    <p class="practise">
-      My goal is to become a web developer <br />.I am using this tutorial to
-      help me
-    </p>
-    <h2>CSS SELECTORS TO STYLE ELEMENTS</h2>
-    <p>
-      You add the style element at the begginning <br />
-      You add all the elements that you want to style between the style element
-    </p>
-    <h2>USING CLASSES IN CSS</h2>
-    <!-- you use a dot . before you write your class -->
-    <p class="practise">Cascading style sheet is used to style a web page</p>
-    <h3>HOW TO STYLE AN IMAGE</h3>
-    <img
-      class="larger-image thick-red-border"
-      src="asserts\images\audi.jpg"
-      alt="a beautiful image of an audi"
-    />
-    <!-- properties like boarder color width and border style can be used -->
-    <div class="silver-background">
-      <p>My favourite fruits</p>
-      <ul>
-        <li>apples</li>
-        <li>bananas</li>
-        <li>oranges</li>
-        <li>mangoes</li>
-      </ul>
-    </div>
-    <div>
-      <form id="sign-up-form" class="kutso">
-        <h3>SIGN UP FORM</h3>
-        <fieldset>
-          <legend>Personal info</legend>
-          <div>
-            <label for="USERNAME">USERNAME</label>
-            <input type="text" name="name" id="name" />
-          </div>
-          <div>
-            <label for="EMAIL">EMAIL</label>
-            <input type="email" name="email" id="email" />
-          </div>
-          <div>
-            <label for="PASSWORD">PASSWORD</label>
-            <input type="password" name="password" id="password" />
-          </div>
-        </fieldset>
-
-        <div>
+    <div class="main_container">
+      <h1 style="color: rgb(35, 35, 245); background-color: red">
+        INLINE STYLES
+      </h1>
+      <p>use directly to the element that you want to style</p>
+      <p>my name is mazingi</p>
+      <p class="practise">
+        My goal is to become a web developer <br />.I am using this tutorial to
+        help me
+      </p>
+      <h2>CSS SELECTORS TO STYLE ELEMENTS</h2>
+      <p>
+        You add the style element at the begginning <br />
+        You add all the elements that you want to style between the style
+        element
+      </p>
+      <h2>USING CLASSES IN CSS</h2>
+      <!-- you use a dot . before you write your class -->
+      <p class="practise">Cascading style sheet is used to style a web page</p>
+      <h3>HOW TO STYLE AN IMAGE</h3>
+      <img
+        class="larger-image thick-red-border"
+        src="asserts\images\Square_Car_Image.jpg"
+        alt="a beautiful image of an audi"
+      />
+      <!-- properties like boarder color width and border style can be used -->
+      <div class="silver-background">
+        <p>My favourite fruits</p>
+        <ul class="list_items">
+          <li class="items">apples</li>
+          <li class="items">bananas</li>
+          <li class="items">oranges</li>
+          <li class="items">mangoes</li>
+        </ul>
+      </div>
+      <div>
+        <form id="sign-up-form" class="kutso">
+          <h3>SIGN UP FORM</h3>
           <fieldset>
-            <legend>Terms</legend>
-            <p>Would you like to receive our updates on your email</p>
+            <legend>Personal info</legend>
             <div>
-              <label for="updates-yes">YES</label>
-              <input type="radio" id="updates-yes" name="updates" value="yes" />
+              <label for="USERNAME">USERNAME</label>
+              <input type="text" name="name" id="name" />
             </div>
             <div>
-              <label for="updates-no">NO</label>
-              <input type="radio" id="updates-no" name="updates" value="no" />
+              <label for="EMAIL">EMAIL</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div>
+              <label for="PASSWORD">PASSWORD</label>
+              <input type="password" name="password" id="password" />
             </div>
           </fieldset>
-        </div>
-        <button>SUBMIT</button>
-      </form>
+
+          <div>
+            <fieldset>
+              <legend>Terms</legend>
+              <p>Would you like to receive our updates on your email</p>
+              <div>
+                <label for="updates-yes">YES</label>
+                <input
+                  type="radio"
+                  id="updates-yes"
+                  name="updates"
+                  value="yes"
+                />
+              </div>
+              <div>
+                <label for="updates-no">NO</label>
+                <input type="radio" id="updates-no" name="updates" value="no" />
+              </div>
+            </fieldset>
+          </div>
+          <button style="margin: 10px 2px">SUBMIT</button>
+        </form>
+      </div>
+      <h4>ELEMENTS USED TO CONTROL THE SPACE</h4>
+      <p>
+        there are 3 properties that are used to control the space around each
+        element for instance:
+      </p>
+      <ol>
+        <dl>
+          <li>
+            <dt>Padding</dt>
+            <dd>padding is the space around the element</dd>
+          </li>
+          <li>
+            <dt>Margin</dt>
+            <dd>margin is the spae outside the border</dd>
+          </li>
+          <li>
+            <dt>border</dt>
+            <dd>
+              is the line shapes the element or a containe and also sepperates
+              padding and margin
+            </dd>
+          </li>
+        </dl>
+      </ol>
     </div>
-    <h4>ELEMENTS USED TO CONTROL THE SPACE</h4>
-    <p>
-      there are 3 properties that are used to control the space around each
-      element for instance:
-    </p>
-    <ol>
-      <dl>
-        <li>
-          <dt>Padding</dt>
-          <dd>padding is the space around the element</dd>
-        </li>
-        <li>
-          <dt>Margin</dt>
-          <dd>margin is the spae outside the border</dd>
-        </li>
-        <li>
-          <dt>border</dt>
-          <dd>
-            is the line shapes the element or a containe and also sepperates
-            padding and margin
-          </dd>
-        </li>
-      </dl>
-    </ol>
   </body>
 </html>
