@@ -56,7 +56,7 @@
             </div>
             <div>
               <label for="EMAIL">EMAIL</label>
-              <input type="email" name="email" id="email" />
+              <input class="email" type="email" name="email" id="email" />
             </div>
             <div>
               <label for="PASSWORD">PASSWORD</label>
@@ -67,8 +67,10 @@
           <div>
             <fieldset>
               <legend>Terms</legend>
-              <p>Would you like to receive our updates on your email</p>
-              <div>
+              <p id="statement">
+                Would you like to receive our updates on your email
+              </p>
+              <div class="radio">
                 <label for="updates-yes">YES</label>
                 <input
                   type="radio"
@@ -77,13 +79,15 @@
                   value="yes"
                 />
               </div>
-              <div>
+              <div class="radio">
                 <label for="updates-no">NO</label>
                 <input type="radio" id="updates-no" name="updates" value="no" />
               </div>
             </fieldset>
           </div>
-          <button style="margin: 10px 2px">SUBMIT</button>
+          <div>
+            <button>SUBMIT</button>
+          </div>
         </form>
       </div>
       <h4>ELEMENTS USED TO CONTROL THE SPACE</h4>

@@ -85,3 +85,31 @@ p {
   padding: 5px;
   margin: 5px;
 }
+
+label {
+  margin-right: 50px;
+  width: 120px;
+}
+
+input {
+  background-color: beige;
+  margin: 8px;
+  margin-left: 0;
+}
+.email {
+  padding-right: 4px;
+  margin-left: 35px;
+}
+
+#updates-no {
+  margin-left: 6px;
+}
+button {
+  width: 80px;
+  height: 30px;
+  margin: 10px;
+  margin-left: 2px;
+}
+#statement {
+  padding: 0px;
+}
