@@ -1,5 +1,5 @@
 body {
-  background-color: #000000;
+  background-color: #2f350f;
   color: green;
   font-family: monospace;
 }
@@ -173,4 +173,76 @@ button {
 }
 .blue-text {
   color: rgb(0, 0, 255);
+}
+
+/* CSS GRIDS */
+.container {
+  font-size: 40px;
+
+  width: 100%;
+  min-height: 300px;
+  background-color: lightgray;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 50px 50px;
+}
+.container-n {
+  font-size: 40px;
+  min-height: 300px;
+  width: 100%;
+  background-color: lightgray;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px 20px;
+  /* grid-column-gap: 20px; 
+  grid-row-gap: 10px;*/
+
+  /* grid -column property gives us an emphasize about how many columns an items is going to take */
+  /* grid -row property gives us an emphasize about how many rows an items is going to take */
+}
+.container {
+  font-size: 40px;
+  width: 60%;
+
+  background-color: lightgray;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 50px 50px;
+  /* justify-items: center; */
+  /* align-items: end; */
+
+  /* justify -items can be used to horizontally align all items in the container */
+  /* align-items can be used to vertically align all items in the container */
+}
+
+/* columns can be added by using grid template columns */
+/* rows can be added by using grid template rows */
+/* css grid units can be used to change the size of columns and rows   */
+/* grid column gap can be used to create a column gap  */
+/* grid row gap can be used to create  a row gap */
+/* gaps can be added faster with grid gap property */
+/* you use 2 numbers that represents  */
+.d1 {
+  background-color: lightskyblue;
+}
+.d2 {
+  background-color: lightsalmon;
+  /* justify-self: center;
+  align-self: start; */
+
+  /* justify self controls how one item is aligned horizontally inside its grid cell.  */
+  /* align self controls how one item is aligned vertically inside its grid cell.  */
+  /* justify -items can be used to horizontally align all items in the container */
+}
+.d3 {
+  background-color: paleturquoise;
+}
+.d4 {
+  background-color: lightpink;
+}
+.d5 {
+  background-color: palegreen;
+  grid-column: 2 /4;
+  grid-row: 2/4;
 }
