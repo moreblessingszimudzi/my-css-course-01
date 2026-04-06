@@ -1,9 +1,9 @@
 body {
-  background-color: rgb(197, 237, 18);
-  margin: 0px;
-  padding: 0px;
+  background-color: #000000;
+  color: green;
+  font-family: monospace;
 }
-
+/* anything you still in body will cascade to the lower elements in the body and that one is called inherit styles from the body   */
 h1 {
   font-family: "Courier New", Courier, monospace;
   padding: 10px;
@@ -97,8 +97,8 @@ input {
   margin-left: 0;
 }
 .email {
-  padding-right: 4px;
-  margin-left: 35px;
+  padding-right: 3px;
+  margin-left: 20px;
 }
 
 #updates-no {
@@ -113,13 +113,64 @@ button {
 #statement {
   padding: 0px;
 }
-.red-box {
-  background-color: red;
-  width: 200px;
-  height: 200px;
-  margin: 20px;
-  padding: 30px;
+.blue-text {
+  color: blue;
 }
-#kutso {
-  margin: 20px;
+.pink-text {
+  color: pink !important;
+}
+#orange-text {
+  color: orange;
+}
+/* a style which is more specific is the one included */
+/* anything you style in body will cascade lower elements */
+/* the style can overide each other in different ways */
+/* the order of the style reaaly matters when we deal with classes */
+/* the last one overrides the first one */
+/* id are more specific than classes and you can apply it on one element  */
+/* inline styles is more specific than these other way of styles */
+/* the most effective way of styling is by declaring important */
+
+/* using of hex code to style the colors */
+.colors-text {
+  margin-left: 20px;
+}
+.color-practise {
+  margin-left: 20px;
+}
+#hex-code {
+  background-color: #f00;
+  padding: 10px;
+}
+.red-text {
+  color: #ff0000;
+}
+.green-text {
+  color: #00ff00;
+}
+.dodger-blue-text {
+  color: #1e90ff;
+}
+.orange-text {
+  color: #ffa500;
+}
+/* use abbreviated hex code */
+.red-text {
+  color: #f00;
+}
+.fuchsia-text {
+  color: #f0f;
+}
+.cyan-text {
+  color: #0ff;
+}
+/* using rgb to mix colors */
+.orchid-text {
+  color: rgb(218, 112, 214);
+}
+.sienna-text {
+  color: rgb(160, 82, 45);
+}
+.blue-text {
+  color: rgb(0, 0, 255);
 }
