@@ -185,9 +185,13 @@ button {
   display: grid;
   grid-template-columns: 100px 100px 100px;
   grid-template-rows: 50px 50px;
+  grid-template-areas:
+    "header header header"
+    "advert content content"
+    "footer footer footer";
 }
 .container-n {
-  font-size: 40px;
+  font-size: 50px;
   min-height: 300px;
   width: 100%;
   background-color: lightgray;
@@ -201,20 +205,12 @@ button {
   /* grid -column property gives us an emphasize about how many columns an items is going to take */
   /* grid -row property gives us an emphasize about how many rows an items is going to take */
 }
-.container {
-  font-size: 40px;
-  width: 60%;
 
-  background-color: lightgray;
-  display: grid;
-  grid-template-columns: 100px 100px 100px;
-  grid-template-rows: 50px 50px;
-  /* justify-items: center; */
-  /* align-items: end; */
+/* justify-items: center; */
+/* align-items: end; */
 
-  /* justify -items can be used to horizontally align all items in the container */
-  /* align-items can be used to vertically align all items in the container */
-}
+/* justify -items can be used to horizontally align all items in the container */
+/* align-items can be used to vertically align all items in the container */
 
 /* columns can be added by using grid template columns */
 /* rows can be added by using grid template rows */
@@ -240,9 +236,21 @@ button {
 }
 .d4 {
   background-color: lightpink;
+
+  /* using grid area without creating anareas template */
 }
 .d5 {
   background-color: palegreen;
-  grid-column: 2 /4;
-  grid-row: 2/4;
+  grid-column: 2 /4; /* grid column property */
+  grid-row: 2/4; /*grid row property */
+  /* grid-area: content; using specific spot using the grid area  */
+
+  /* justify-self: start; */
+  /* align-self: center; */
+  /* grid-area: 3/1/4/4;  grid area using codes */
 }
+/* ..reduce repetition using the repeat function
+..limit item size using the minmax function
+
+
+*/
