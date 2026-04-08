@@ -254,3 +254,10 @@ button {
 
 
 */
+/*.display flex allow containers to be displayed horizontally which is the main axes by default  */
+/* justify content is a property used to align containers horizontally [main axes]*/
+/* flex direction gives us the direction of the containers [columns or rows] */
+/* we can also use align items property to align content  in the cross axes that is vertically   */
+/* flex-wrap controls whether flex items stay on one line or move to the next line (wrap). */
+/* flex-shrink controls how much a flex item shrinks when there is NOT enough space in the container. */
+/* align-items in Flexbox controls how items are aligned on the cross axis (the opposite of the main direction). */
