@@ -176,6 +176,14 @@ button {
 }
 
 /* CSS GRIDS */
+
+/* columns can be added by using grid template columns */
+/* rows can be added by using grid template rows */
+/* css grid units can be used to change the size of columns and rows   */
+/* grid column gap can be used to create a column gap  */
+/* grid row gap can be used to create  a row gap */
+/* gaps can be added faster with grid gap property */
+/* you use 2 numbers that represents [columns then rows */
 .container {
   font-size: 40px;
 
@@ -201,13 +209,11 @@ button {
   grid-gap: 10px 20px;
   /* grid-column-gap: 20px; 
   grid-row-gap: 10px;*/
-
-  /* grid -column property gives us an emphasize about how many columns an items is going to take */
-  /* grid -row property gives us an emphasize about how many rows an items is going to take */
+  /* justify-items: center; */
+  /* align-items: end; */
 }
-
-/* justify-items: center; */
-/* align-items: end; */
+/* grid -template-column property gives us an emphasize about how many columns an items is going to take */
+/* grid -template-row property gives us an emphasize about how many rows an items is going to take */
 
 /* justify -items can be used to horizontally align all items in the container */
 /* align-items can be used to vertically align all items in the container */
@@ -218,7 +224,7 @@ button {
 /* grid column gap can be used to create a column gap  */
 /* grid row gap can be used to create  a row gap */
 /* gaps can be added faster with grid gap property */
-/* you use 2 numbers that represents  */
+/* you use 2 numbers that represents [columns then rows */
 .d1 {
   background-color: lightskyblue;
 }
