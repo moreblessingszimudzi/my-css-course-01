@@ -267,3 +267,33 @@ button {
 /* flex-wrap controls whether flex items stay on one line or move to the next line (wrap). */
 /* flex-shrink controls how much a flex item shrinks when there is NOT enough space in the container. */
 /* align-items in Flexbox controls how items are aligned on the cross axis (the opposite of the main direction). */
+
+.flex-container {
+  width: 730px;
+  height: 500px;
+  background-color: #1e90ff;
+  color: black;
+  display: flex;
+  /* flex-direction: column; this changes the flex direction from default[horizontally] to columns [vertical] */
+  justify-content: flex-start;
+  /* align-items: baseline;   used for tax alignment in the cell  */
+  /* flex-wrap: wrap; controls wether flex items stay on one line or move to the next line */
+  align-items: flex-start;
+  /* gap: 10px; controls the gap of the flex container */
+}
+.item-item-1 {
+  width: 100px;
+  height: 80px;
+  background-color: #00ff00;
+  /* font-size: 25px; */
+}
+.item-item-2 {
+  width: 100px;
+  height: 80px;
+  background-color: #dd4a0f;
+}
+.item-item-3 {
+  width: 100px;
+  height: 80px;
+  background-color: #c51bbc;
+}
