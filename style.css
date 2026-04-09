@@ -256,10 +256,9 @@ button {
   /* grid-area: 3/1/4/4;  grid area using codes */
 }
 /* ..reduce repetition using the repeat function
-..limit item size using the minmax function
+..limit item size using the minmax function */
 
-
-*/
+/* FLEXBOX */
 /*.display flex allow containers to be displayed horizontally which is the main axes by default  */
 /* justify content is a property used to align containers horizontally [main axes]*/
 /* flex direction gives us the direction of the containers [columns or rows] */
@@ -267,6 +266,8 @@ button {
 /* flex-wrap controls whether flex items stay on one line or move to the next line (wrap). */
 /* flex-shrink controls how much a flex item shrinks when there is NOT enough space in the container. */
 /* align-items in Flexbox controls how items are aligned on the cross axis (the opposite of the main direction). */
+/* flex-grow controls how much a flex item grows when there’s extra space */
+/* flex-basis:sets the initial size of a flex item before grow or shrink happens. */
 
 .flex-container {
   width: 730px;
@@ -275,10 +276,10 @@ button {
   color: black;
   display: flex;
   /* flex-direction: column; this changes the flex direction from default[horizontally] to columns [vertical] */
-  justify-content: flex-start;
-  /* align-items: baseline;   used for tax alignment in the cell  */
+  justify-content: flex-start; /* space between,space around and space evenly*/
+  /* align-items: baseline;   used for text alignment in the cell  */
   /* flex-wrap: wrap; controls wether flex items stay on one line or move to the next line */
-  align-items: flex-start;
+  align-items: start;
   /* gap: 10px; controls the gap of the flex container */
 }
 .item-item-1 {
@@ -287,13 +288,22 @@ button {
   background-color: #00ff00;
   /* font-size: 25px; */
 }
+
 .item-item-2 {
   width: 100px;
   height: 80px;
   background-color: #dd4a0f;
+  /* align-self: center;one item align itself differently from others.  */
 }
 .item-item-3 {
   width: 100px;
   height: 80px;
   background-color: #c51bbc;
+  /* order: -1;gives us the order within a container */
+  /* flex-grow: 1;flex-grow controls how much a flex item grows when there’s extra space. */
+  /* flex-shrink: 5;flex-shrink controls how much a flex item shrinks when there’s not enough space. */
+  /* flex-basis: 200px;sets the initial size of a flex item before grow or shrink happens. */
 }
+/* flex-basis → starting size
+flex-grow → grow bigger
+flex-shrink → shrink smaller */
