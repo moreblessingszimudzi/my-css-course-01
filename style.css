@@ -191,12 +191,19 @@ button {
   min-height: 300px;
   background-color: lightgray;
   display: grid;
-  grid-template-columns: 100px 100px 100px;
-  grid-template-rows: 50px 50px;
-  grid-template-areas:
+  /* grid-template-columns: 100px 100px 100px; this controls how big is the columns and they are 3 */
+  /* grid-template-rows: 50px 50px; */
+  grid-gap: 10px 20px;
+  grid-template-columns: repeat(3, minmax(60px, 1fr)); /*minmax*/
+
+  /* auto-fill → create as many columns as can fit but it keeps empty space where it is */
+  /* Auto fit ;Creates as many columns as can fit
+    Then stretches them to fill the available space
+     Removes “empty space columns” */
+  /* grid-template-areas:
     "header header header"
-    "advert content content"
-    "footer footer footer";
+    ". content content"
+    "footer footer footer"; */
 }
 .container-n {
   font-size: 50px;
@@ -204,16 +211,23 @@ button {
   width: 100%;
   background-color: lightgray;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr; fr is used to divide the available space */
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: repeat(3, minmax(50px, 1fr)); */
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 10px 20px;
-  /* grid-column-gap: 20px; 
-  grid-row-gap: 10px;*/
+  /* grid-column-gap: 20px;
+  grid-row-gap: 10px; */
   /* justify-items: center; */
   /* align-items: end; */
+  grid-template-areas:
+    "header header header"
+    ". content content"
+    "footer footer footer";
 }
-/* grid -template-column property gives us an emphasize about how many columns an items is going to take */
-/* grid -template-row property gives us an emphasize about how many rows an items is going to take */
+
+/* grid -template-column property gives us an emphasize about how many columns  items is going to take */
+/* grid -template-row property gives us an emphasize about how many rows  items is going to take */
 
 /* justify -items can be used to horizontally align all items in the container */
 /* align-items can be used to vertically align all items in the container */
@@ -225,6 +239,7 @@ button {
 /* grid row gap can be used to create  a row gap */
 /* gaps can be added faster with grid gap property */
 /* you use 2 numbers that represents [columns then rows */
+/* repeat functions lets you repeat columns or rows without typing them many times */
 .d1 {
   background-color: lightskyblue;
 }
@@ -247,13 +262,15 @@ button {
 }
 .d5 {
   background-color: palegreen;
-  grid-column: 2 /4; /* grid column property */
-  grid-row: 2/4; /*grid row property */
+  /* grid-area: header; */
+  /* grid-column: 2 /4;space occupied by the cell [read by lines ] */
+  /* grid column property */
+  /* grid-row: 2/4;*/ /*grid row property */
   /* grid-area: content; using specific spot using the grid area  */
 
   /* justify-self: start; */
   /* align-self: center; */
-  /* grid-area: 3/1/4/4;  grid area using codes */
+  /* grid-area: 3/1/4/4; grid area using codes */
 }
 /* ..reduce repetition using the repeat function
 ..limit item size using the minmax function */
