@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Saira+Stencil:ital,wght@0,100..900;1,100..900&family=Sekuya&display=swap");
+
+body {
+  background-color: aquamarine;
+  margin: 0;
+  padding: 0;
+}
+.title {
+  text-align: center;
+  background-color: aqua;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  /* margin-top: 10px; */
+  font-family: "Bitcount Grid Double", monospace, sans-serif;
+}
+.first-text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 20px;
+}
+.second-text {
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  /* margin-bottom: 20px; */
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 18px;
+  line-height: 20px;
+  /* margin: -10px; */
+}
+.third-text {
+  /* padding-left: 20px; */
+  padding-left: 1.2rem;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  /* padding: -10px; */
+  font-family: cursive;
+  line-height: 20px;
+}
