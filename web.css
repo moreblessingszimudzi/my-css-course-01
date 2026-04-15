@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Saira+Stencil:ital,wght@0,100..900;1,100..900&family=Sekuya&display=swap");
+
+body {
+  background-color: rgb(7, 7, 33);
+  color: antiquewhite;
+  background-image: url(asserts/images/NATURE.jpg);
+  /* font-family: bitcount grid double; */
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  /* color: chartreuse; */
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 5px;
+  padding: 5px;
+  gap: 1.5rem;
+  margin-bottom: 50px;
+  color: chartreuse;
+}
+.nav-links:hover {
+  text-decoration: underline;
+}
+
+h3 {
+  margin: 10px;
+  margin-top: 20px;
+}
+h1 {
+  margin-left: 10px;
+  width: 400px;
+  font-family: bitcount grid double;
+}
+.span {
+  color: chartreuse;
+}
+
+img {
+  width: 200px;
+  height: 280px;
+  border-radius: 10%;
+  box-shadow: 0 0 10px rgb(118, 218, 25);
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}
+p {
+  margin: 10px;
+  line-height: 20px;
+}

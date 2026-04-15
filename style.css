@@ -1,5 +1,5 @@
 body {
-  background-color: #2f350f;
+  background-color: #262827;
   color: green;
   font-family: monospace;
 }
@@ -292,6 +292,7 @@ button {
 /* flex-grow controls how much a flex item grows when there’s extra space */
 /* flex-basis:sets the initial size of a flex item before grow or shrink happens. */
 
+/* https://www.youtube.com/watch?v=phWxA89Dy94&t=144s */
 .flex-container {
   width: 730px;
   height: 500px;
@@ -332,6 +333,7 @@ button {
 flex-grow → grow bigger
 flex-shrink → shrink smaller */
 
+/* TUTORIAL */
 #box-container {
   background-color: gray;
   height: 500px;
@@ -372,7 +374,7 @@ flex-shrink → shrink smaller */
   font-style: italic;
   text-align: center;
 }
-/* MY VIDEO */
+/* MY VIDEO  */
 
 .my-video {
   padding: 20px;
