@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Saira+Stencil:ital,wght@0,100..900;1,100..900&family=Sekuya&display=swap");
+
+body {
+  background-color: rgb(30, 29, 29);
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 5px;
+  font-family: roboto;
+}
+.first-p {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+.button-fs {
+  background-color: rgb(242, 161, 10);
+  color: rgb(0, 0, 0);
+  border-radius: 50px;
+  /* border-radius: solid; */
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: none;
+}
+.button-s {
+  background-color: rgb(57, 55, 55);
+  color: whitesmoke;
+  border-radius: 50px;
+
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: none;
+}
+.inner-1 {
+  border: solid;
+  padding: 20px;
+  padding-top: 0px;
+  border-radius: 20px;
+  width: 500px;
+  height: 320px;
+  margin: 50px;
+  border-color: rgb(16, 18, 18);
+}
+.icon {
+  font-size: 30px;
+  /* padding: 10px; */
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+h2 {
+  font-family: roboto;
+  width: 230px;
+}
+.second-p {
+  width: 350px;
+  word-spacing: 5px;
+  margin-bottom: 100px;
+}
+.last {
+  display: flex;
+}
+.button-pasta {
+  margin-left: auto;
+  border-radius: 20px;
+  border: none;
+  width: 48px;
+  height: 30px;
+  padding-top: 5px;
+  background-color: rgb(30, 45, 32);
+  color: green;
+  font-family: roboto;
+  /* margin-bottom: 10px; */
+}
