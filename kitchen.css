@@ -45,21 +45,25 @@ h1 {
   border: none;
 }
 .inner-1 {
+  flex: 1 1 300px;
+  max-width: 500px;
+  height: 320px;
   border: solid;
   padding: 20px;
   padding-top: 0px;
   border-radius: 20px;
-  width: 500px;
-  height: 320px;
+  /* width: 500px;
+  height: 320px; */
   margin: 50px;
   border-color: rgb(16, 18, 18);
+  background-color: rgb(38, 32, 32);
 }
 .icon {
   font-size: 30px;
   /* padding: 10px; */
   margin-top: 20px;
   margin-right: 10px;
-  margin-left: 5px;
+  margin-left: 2px;
   margin-bottom: 10px;
 }
 h2 {
@@ -74,15 +78,73 @@ h2 {
 .last {
   display: flex;
 }
+
+.people {
+  margin-left: 10px;
+}
 .button-pasta {
   margin-left: auto;
   border-radius: 20px;
   border: none;
   width: 48px;
   height: 30px;
-  padding-top: 5px;
+  padding-top: 2px;
   background-color: rgb(30, 45, 32);
   color: green;
   font-family: roboto;
-  /* margin-bottom: 10px; */
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.inner-2 {
+  flex: 1 1 350px;
+  max-width: 500px;
+  height: 320px;
+  border: solid;
+  padding: 20px;
+  padding-top: 0px;
+  border-radius: 20px;
+  /* width: 500px;
+  height: 320px; */
+  margin: 50px;
+  border-color: rgb(16, 18, 18);
+  background-color: rgb(38, 32, 32);
+}
+.icon-2 {
+  font-size: 30px;
+  /* padding: 10px; */
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 2px;
+  margin-bottom: 10px;
+}
+.roasted-h {
+  font-family: roboto;
+  width: 250px;
+}
+.roasted-p {
+  width: 350px;
+  word-spacing: 5px;
+  margin-bottom: 100px;
+}
+.last-2 {
+  display: flex;
+}
+.button-soup {
+  margin-left: auto;
+  border-radius: 20px;
+  border: none;
+  width: 48px;
+  height: 30px;
+  padding-top: 2px;
+  background-color: rgb(30, 45, 32);
+  color: green;
+  font-family: roboto;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.inner-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
 }
