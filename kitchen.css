@@ -6,158 +6,215 @@ body {
   margin: 0;
   color: white;
 }
-h1 {
-  text-align: center;
-  margin-bottom: 5px;
-  font-family: roboto;
+p,
+h1,
+h2,
+button {
+  padding: 0;
+  margin: 0;
 }
-.first-p {
-  text-align: center;
-  margin-top: 5px;
-  margin-bottom: 50px;
+.main-container {
+  max-width: 100%;
+  width: 95%;
+  padding: 20px;
+  margin: auto;
+  background-color: #181818;
 }
+@media (max-width: 720px) {
+  .main-container {
+    max-width: 100%;
+    width: 100%;
+    padding: 2px;
+    margin: auto;
+  }
+}
+/* HEADER CONTAINER DESKTOP */
+/* flex: diplays things in one line */
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+.header-icon {
+  padding: 0;
+  margin: 0;
+}
+
+.page-title {
+  padding: 0;
+  margin: 0;
+  font-size: 50px;
+}
+
+.call-to-action {
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+  text-transform: none;
+}
+/* HEADER CONTAINER MOBILE */
+@media (max-width: 720px) {
+  /* flex: diplays things in one line */
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+  .header-icon {
+    padding: 0;
+    margin: 0;
+  }
+
+  .page-title {
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+  }
+
+  .call-to-action {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    text-transform: none;
+  }
+}
+/* BUTTONS CONTAINER DESKTOP  */
 .buttons-container {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  width: 50%;
+  margin: 20px auto;
+  gap: 20px;
+}
+
+.buttons-container button {
+  border-radius: 10px;
+  background: rgb(255, 0, 0);
+  border: none;
+}
+.buttons-container button:last-child {
+  border-radius: 10px;
+  background: rgb(0, 238, 255);
+  border: none;
+}
+
+/* BUTTONS CONTAINER MOBILE  */
+@media (max-width: 720px) {
+  .buttons-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    margin: 20px auto;
+    gap: 10px;
+  }
+  .buttons-container button {
+    border-radius: 10px;
+    background: #5b4172;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: white;
+  }
+  .buttons-container button:last-child {
+    color: black;
+  }
+}
+
+/* GRID/CARD CONTAINER DESKTOP*/
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* background-color: rgb(155, 0, 0); */
+  width: 80%;
   gap: 10px;
-  margin-bottom: 40px;
+  padding: 10px;
+  margin: 40px auto;
 }
-.button-fs {
-  background-color: rgb(242, 161, 10);
-  color: rgb(0, 0, 0);
-  border-radius: 50px;
-  /* border-radius: solid; */
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border: none;
-}
-.button-s {
-  background-color: rgb(57, 55, 55);
-  color: whitesmoke;
-  border-radius: 50px;
-  cursor: pointer;
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border: none;
-  transition: opacity 0.15s;
-}
-.button-s:hover {
-  background-color: rgb(239, 165, 17);
-  opacity: 0.5;
-  color: black;
-}
-.button-s:active {
-  background-color: rgb(248, 249, 244);
-  opacity: 0.2;
+@media (max-width: 720px) {
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* background-color: rgb(155, 0, 0); */
+    width: 90%;
+    gap: 10px;
+    padding: 10px;
+    margin: 40px auto;
+  }
 }
 
-.inner-1 {
-  flex: 1 1 300px;
-  max-width: 500px;
-  height: 320px;
-  border: solid;
+.cards {
+  background-color: #5b4172;
+  backdrop-filter: blur(200px);
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
   padding: 20px;
-  padding-top: 0px;
   border-radius: 20px;
-  /* width: 500px;
-  height: 320px; */
-  margin: 50px;
-  border-color: rgb(16, 18, 18);
-  background-color: rgb(38, 32, 32);
-  box-shadow: 5px 5px 10px rgba(17, 17, 18, 1);
-}
-.icon {
-  font-size: 30px;
-  /* padding: 10px; */
-  margin-top: 20px;
-  margin-right: 10px;
-  margin-left: 2px;
-  margin-bottom: 10px;
-}
-h2 {
-  font-family: roboto;
-  width: 230px;
-}
-.second-p {
-  width: 350px;
-  word-spacing: 5px;
-  margin-bottom: 100px;
-}
-.last {
-  display: flex;
+  gap: 50px;
 }
 
-.people {
-  margin-left: 10px;
-}
-.button-pasta {
-  margin-left: auto;
-  border-radius: 20px;
-  border: none;
-  width: 48px;
-  height: 30px;
-  padding-top: 2px;
-  background-color: rgb(30, 45, 32);
-  color: green;
-  font-family: roboto;
-  margin-top: 10px;
-  cursor: pointer;
+/* card-top */
+.card-top {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 16px;
 }
 
-.inner-2 {
-  flex: 1 1 350px;
-  max-width: 500px;
-  height: 320px;
-  border: solid;
-  padding: 20px;
-  padding-top: 0px;
-  border-radius: 20px;
-  /* width: 500px;
-  height: 320px; */
-  margin: 50px;
-  border-color: rgb(16, 18, 18);
-  background-color: rgb(38, 32, 32);
-  box-shadow: 5px 5px 10px rgba(17, 17, 18, 1);
+.card-top p:first-child {
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
 }
-.icon-2 {
-  font-size: 30px;
-  /* padding: 10px; */
-  margin-top: 20px;
-  margin-right: 10px;
-  margin-left: 2px;
-  margin-bottom: 10px;
+.card-top h2:nth-child(2) {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  text-transform: none;
 }
-.roasted-h {
-  font-family: roboto;
-  width: 250px;
+.card-top p:nth-child(3) {
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  text-transform: none;
+  color: rgb(190, 190, 190);
 }
-.roasted-p {
-  width: 350px;
-  word-spacing: 5px;
-  margin-bottom: 100px;
-}
-.last-2 {
+
+/* card-bottom */
+.card-bottom {
   display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  justify-content: space-between;
 }
-.button-soup {
-  margin-left: auto;
-  border-radius: 20px;
+.card-bottom div:first-child {
+  display: flex;
+  flex-direction: row;
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  text-transform: none;
+  color: rgb(190, 190, 190);
+}
+
+.card-bottom button {
+  border-radius: 10px;
   border: none;
-  width: 48px;
-  height: 30px;
-  padding-top: 2px;
-  background-color: rgb(30, 45, 32);
-  color: green;
-  font-family: roboto;
-  margin-top: 10px;
-  cursor: pointer;
-}
-.inner-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0;
+  font-size: 9px;
+  padding: 2px 6px;
+  background-color: rgb(190, 190, 190);
+  color: rgb(74, 74, 74);
 }

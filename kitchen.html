@@ -7,65 +7,356 @@
     <link rel="stylesheet" href="kitchen.css" />
   </head>
   <body>
+    <!-- SECTIONS -->
     <div class="main-container">
-      <div header-container>
-        <p style="text-align: center; font-size: 50px; margin-bottom: 10px">
-          🍳
-        </p>
-        <h1>Cozy Kitchen</h1>
-        <p class="first-p">Simple,heartwarming recipes for every day</p>
+      <!--SECTION 1: HEADER CONTAINER-->
+      <div class="header-container">
+        <p class="header-icon">🍳</p>
+        <h1 class="page-title">Cozy Kitchen</h1>
+        <p class="call-to-action">Simple, heartwarming recipes for every day</p>
       </div>
+
+      <!-- SECTION 2: BUTTONS CONTAINER -->
       <div class="buttons-container">
-        <button class="button-fs">All</button>
-        <button class="button-s">Pasta</button>
-        <button class="button-s">Soup</button>
-        <button class="button-s">Main</button>
-        <button class="button-s">Breakfast</button>
-        <button class="button-s">Salad</button>
-        <button class="button-s">Dessert</button>
+        <button>All</button>
+        <!--  .buttons-container button:nth-child(1)  or  .buttons-container button:first-child-->
+        <button>Pasta</button
+        ><!--  .buttons-container button:nth-child(2)-->
+        <button>Soup</button
+        ><!--  .buttons-container button:nth-child(3)-->
+        <button>Main</button
+        ><!--  .buttons-container button:nth-child(4)-->
+        <button>Breakfast</button
+        ><!--  .buttons-container button:nth-child(5)-->
+        <button>Salad</button
+        ><!--  .buttons-container button:nth-child(6)-->
+        <button>Dessert</button
+        ><!--  .buttons-container button:nth-child(7)  or  .buttons-container button:first-child-->
       </div>
-      <div class="inner-container">
-        <div class="inner-1">
-          <p class="icon">&#127837;</p>
-          <h2>Spaghetti Carbonara</h2>
-          <p class="second-p">
-            A rich and creamy Romab classic made with eggs,pecorino and
-            guanciale
-          </p>
-          <div class="last">
-            <p>&#8986;20 min</p>
-            <p class="people">&#128100; 4</p>
-            <button class="button-pasta">Pasta</button>
+
+      <!-- SECTION 3: GRID/CARD CONTAINER -->
+      <div class="cards-container">
+        <!-- Card 1  -->
+        <div class="cards">
+          <!-- card-top -->
+          <div class="card-top">
+            <p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-drum-icon lucide-drum"
+              >
+                <path d="m2 2 8 8" />
+                <path d="m22 2-8 8" />
+                <ellipse cx="12" cy="9" rx="10" ry="5" />
+                <path d="M7 13.4v7.9" />
+                <path d="M12 14v8" />
+                <path d="M17 13.4v7.9" />
+                <path d="M2 9v8a10 5 0 0 0 20 0V9" />
+              </svg>
+            </p>
+            <h2>Spaghetti Carbonara</h2>
+            <p>
+              A rich and creamy Romab classic made with eggs,pecorino and
+              guanciale
+            </p>
+          </div>
+
+          <!-- card-bottom -->
+          <div class="card-bottom">
+            <!-- card-bottom - left -->
+            <!-- .card-bottom div:first-child -->
+            <!-- .card-bottom div:nth-child(1) -->
+            <div>
+              <p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-bell-off-icon lucide-bell-off"
+                >
+                  <path d="M10.268 21a2 2 0 0 0 3.464 0" />
+                  <path
+                    d="M17 17H4a1 1 0 0 1-.74-1.673C4.59 13.956 6 12.499 6 8a6 6 0 0 1 .258-1.742"
+                  />
+                  <path d="m2 2 20 20" />
+                  <path
+                    d="M8.668 3.01A6 6 0 0 1 18 8c0 2.687.77 4.653 1.707 6.05"
+                  />
+                </svg>
+              </p>
+              <p>&#128100; 4</p>
+            </div>
+
+            <!-- card-bottom - right-->
+            <!-- .card-bottom div:last-child -->
+            <!-- .card-bottom div:nth-child(2) -->
+            <!-- .card-bottom  button-->
+            <button>Pasta</button>
           </div>
         </div>
 
-        <div class="inner-2">
-          <p class="icon-2">&#127813;</p>
-          <h2 class="roasted-h">Roasted Tomato Soup</h2>
-          <p class="roasted-p">
-            Deeply flavoured roasted tomato soup with garlic,basil,and a swirl
-            of cream
-          </p>
-          <div class="last-2">
-            <p>&#8986;40 min</p>
-            <p class="people">&#128100; 6</p>
-            <button class="button-soup">Soup</button>
+        <!-- Card 2  -->
+
+        <div class="cards">
+          <!-- card-top -->
+          <div class="card-top">
+            <p>&#12837;</p>
+            <h2>Soup Carbonara</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi.
+            </p>
+          </div>
+
+          <!-- card-bottom -->
+          <div class="card-bottom">
+            <!-- card-bottom - left -->
+            <!-- .card-bottom div:first-child -->
+            <!-- .card-bottom div:nth-child(1) -->
+            <div>
+              <p>&#8986;20 min</p>
+              <p>&#128100; 4</p>
+            </div>
+
+            <!-- card-bottom - right-->
+            <!-- .card-bottom div:last-child -->
+            <!-- .card-bottom div:nth-child(2) -->
+            <!-- .card-bottom  button-->
+            <button>Pasta</button>
           </div>
         </div>
-        <div class="inner-2">
-          <p class="icon-2">&#127819;</p>
-          <h2 class="roasted-h">Lemon Herb Chicken</h2>
-          <p class="roasted-p" style="width: 380px">
-            Juicy roasted chicken thighs with bright lemon,garlic and fresh
-            herbs
-          </p>
-          <div class="last-2">
-            <p>&#8986;35 min</p>
-            <p class="people">&#128100; 4</p>
-            <button class="button-soup">Main</button>
+        <!-- Card 3 -->
+        <div class="cards">
+          <!-- card-top -->
+          <div class="card-top">
+            <p>&#127837;</p>
+            <h2>Spaghetti Carbonara</h2>
+            <p>
+              A rich and creamy Romab classic made with eggs,pecorino and
+              guanciale
+            </p>
+          </div>
+
+          <!-- card-bottom -->
+          <div class="card-bottom">
+            <!-- card-bottom - left -->
+            <!-- .card-bottom div:first-child -->
+            <!-- .card-bottom div:nth-child(1) -->
+            <div>
+              <p>&#8986;20 min</p>
+              <p>&#128100; 4</p>
+            </div>
+
+            <!-- card-bottom - right-->
+            <!-- .card-bottom div:last-child -->
+            <!-- .card-bottom div:nth-child(2) -->
+            <!-- .card-bottom  button-->
+            <button>Pasta</button>
+          </div>
+        </div>
+
+        <!-- Card 4  -->
+
+        <div class="cards">
+          <!-- card-top -->
+          <div class="card-top">
+            <p>&#127837;</p>
+            <h2>Spaghetti Carbonara</h2>
+            <p>
+              A rich and creamy Romab classic made with eggs,pecorino and
+              guanciale
+            </p>
+          </div>
+
+          <!-- card-bottom -->
+          <div class="card-bottom">
+            <!-- card-bottom - left -->
+            <!-- .card-bottom div:first-child -->
+            <!-- .card-bottom div:nth-child(1) -->
+            <div>
+              <p>&#8986;20 min</p>
+              <p>&#128100; 4</p>
+            </div>
+
+            <!-- card-bottom - right-->
+            <!-- .card-bottom div:last-child -->
+            <!-- .card-bottom div:nth-child(2) -->
+            <!-- .card-bottom  button-->
+            <button>Pasta</button>
+          </div>
+        </div>
+        <!-- Card 5  -->
+
+        <div class="cards">
+          <!-- card-top -->
+          <div class="card-top">
+            <p>&#127837;</p>
+            <h2>Spaghetti Carbonara</h2>
+            <p>
+              A rich and creamy Romab classic made with eggs,pecorino and
+              guanciale
+            </p>
+          </div>
+
+          <!-- card-bottom -->
+          <div class="card-bottom">
+            <!-- card-bottom - left -->
+            <!-- .card-bottom div:first-child -->
+            <!-- .card-bottom div:nth-child(1) -->
+            <div>
+              <p>&#8986;20 min</p>
+              <p>&#128100; 4</p>
+            </div>
+
+            <!-- card-bottom - right-->
+            <!-- .card-bottom div:last-child -->
+            <!-- .card-bottom div:nth-child(2) -->
+            <!-- .card-bottom  button-->
+            <button>Pasta</button>
+          </div>
+        </div>
+        <!-- Card 6  -->
+
+        <div class="cards">
+          <!-- card-top -->
+          <div class="card-top">
+            <p>&#127837;</p>
+            <h2>Spaghetti Carbonara</h2>
+            <p>
+              A rich and creamy Romab classic made with eggs,pecorino and
+              guanciale
+            </p>
+          </div>
+
+          <!-- card-bottom -->
+          <div class="card-bottom">
+            <!-- card-bottom - left -->
+            <!-- .card-bottom div:first-child -->
+            <!-- .card-bottom div:nth-child(1) -->
+            <div>
+              <p>&#8986;20 min</p>
+              <p>&#128100; 4</p>
+            </div>
+
+            <!-- card-bottom - right-->
+            <!-- .card-bottom div:last-child -->
+            <!-- .card-bottom div:nth-child(2) -->
+            <!-- .card-bottom  button-->
+            <button>Pasta</button>
+          </div>
+        </div>
+        <!-- Card 7  -->
+        <div class="cards">
+          <!-- card-top -->
+          <div class="card-top">
+            <p>&#127837;</p>
+            <h2>Spaghetti Carbonara</h2>
+            <p>
+              A rich and creamy Romab classic made with eggs,pecorino and
+              guanciale
+            </p>
+          </div>
+
+          <!-- card-bottom -->
+          <div class="card-bottom">
+            <!-- card-bottom - left -->
+            <!-- .card-bottom div:first-child -->
+            <!-- .card-bottom div:nth-child(1) -->
+            <div>
+              <p>&#8986;20 min</p>
+              <p>&#128100; 4</p>
+            </div>
+
+            <!-- card-bottom - right-->
+            <!-- .card-bottom div:last-child -->
+            <!-- .card-bottom div:nth-child(2) -->
+            <!-- .card-bottom  button-->
+            <button>Pasta</button>
+          </div>
+        </div>
+        <!-- Card 8  -->
+        <div class="cards">
+          <!-- card-top -->
+          <div class="card-top">
+            <p>&#127837;</p>
+            <h2>Spaghetti Carbonara</h2>
+            <p>
+              A rich and creamy Romab classic made with eggs,pecorino and
+              guanciale
+            </p>
+          </div>
+
+          <!-- card-bottom -->
+          <div class="card-bottom">
+            <!-- card-bottom - left -->
+            <!-- .card-bottom div:first-child -->
+            <!-- .card-bottom div:nth-child(1) -->
+            <div>
+              <p>&#8986;20 min</p>
+              <p>&#128100; 4</p>
+            </div>
+
+            <!-- card-bottom - right-->
+            <!-- .card-bottom div:last-child -->
+            <!-- .card-bottom div:nth-child(2) -->
+            <!-- .card-bottom  button-->
+            <button>Pasta</button>
+          </div>
+        </div>
+
+        <!-- Card 9  -->
+        <div class="cards">
+          <!-- card-top -->
+          <div class="card-top">
+            <p>&#127837;</p>
+            <h2>Spaghetti Carbonara</h2>
+            <p>
+              A rich and creamy Romab classic made with eggs,pecorino and
+              guanciale
+            </p>
+          </div>
+
+          <!-- card-bottom -->
+          <div class="card-bottom">
+            <!-- card-bottom - left -->
+            <!-- .card-bottom div:first-child -->
+            <!-- .card-bottom div:nth-child(1) -->
+            <div>
+              <p>&#8986;20 min</p>
+              <p>&#128100; 4</p>
+            </div>
+
+            <!-- card-bottom - right-->
+            <!-- .card-bottom div:last-child -->
+            <!-- .card-bottom div:nth-child(2) -->
+            <!-- .card-bottom  button-->
+            <button>Pasta</button>
           </div>
         </div>
       </div>
     </div>
+    <link rel="stylesheet" href="" />
+    <script src="db.js"></script>
   </body>
 </html>
+<!-- Research
+1. margin:auto;  what does it mean?
+2. 
+3. What is an svg
+-->
