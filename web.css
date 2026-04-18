@@ -42,21 +42,29 @@ h1 {
 }
 
 img {
-  width: 200px;
+  align-self: flex-start;
+  max-width: 260px;
+  margin-left: auto;
+  /* height: 230px; */
   height: 280px;
   border-radius: 10%;
-  box-shadow: 0 0 10px rgb(118, 218, 25);
+  box-shadow: 10px 10px 10px rgba(127, 225, 0, 1);
+  /* box-shadow: 5px 5px 5px chartreuse; */
 }
 .container {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
   gap: 10px;
+  margin-left: 10px;
+  gap: 50px;
 }
 .text {
   display: flex;
   flex-direction: column;
   margin-right: 40px;
+  margin-bottom: 0;
 }
 p {
   margin: 10px;
