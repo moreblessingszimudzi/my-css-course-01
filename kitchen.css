@@ -37,13 +37,24 @@ h1 {
   background-color: rgb(57, 55, 55);
   color: whitesmoke;
   border-radius: 50px;
-
+  cursor: pointer;
   padding-left: 12px;
   padding-right: 12px;
   padding-top: 5px;
   padding-bottom: 5px;
   border: none;
+  transition: opacity 0.15s;
 }
+.button-s:hover {
+  background-color: rgb(239, 165, 17);
+  opacity: 0.5;
+  color: black;
+}
+.button-s:active {
+  background-color: rgb(248, 249, 244);
+  opacity: 0.2;
+}
+
 .inner-1 {
   flex: 1 1 300px;
   max-width: 500px;
@@ -57,6 +68,7 @@ h1 {
   margin: 50px;
   border-color: rgb(16, 18, 18);
   background-color: rgb(38, 32, 32);
+  box-shadow: 5px 5px 10px rgba(17, 17, 18, 1);
 }
 .icon {
   font-size: 30px;
@@ -109,6 +121,7 @@ h2 {
   margin: 50px;
   border-color: rgb(16, 18, 18);
   background-color: rgb(38, 32, 32);
+  box-shadow: 5px 5px 10px rgba(17, 17, 18, 1);
 }
 .icon-2 {
   font-size: 30px;
